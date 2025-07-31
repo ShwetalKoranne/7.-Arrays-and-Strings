@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter " << n << " elements:\n";
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
+
+    cout << "The elements of the array are:\n";
+    for (int i = 0; i < n; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+/*             OUTPUT 
+Enter the number of elements in the array: 5
+Enter 5 elements:
+5 8 7 4 0
+The elements of the array are:
+5 8 7 4 0 
+*/
